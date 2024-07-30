@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Position. */
+#position_section {
+    background-color: aliceblue;
+    padding: 2rem 0;
+}
+
+.position_container {
+    margin: 8rem auto;
+    background-color: green;
+    height: 10rem;
+    width: 10rem;
+    position: relative;
+}
+
+.position_inner {
+    height: 2rem;
+    width: 2rem;
+    background-color: red;
+    position: absolute;
+}
+
+.position_top_left {
+    top: 0;
+    left: 0;
+}
+
+.position_top_right {
+    top: 0;
+    right: 0;
+}
+
+.position_bottom_left {
+    bottom: 0;
+    left: 0;
+}
+
+.position_bottom_right {
+    bottom: 0;
+    right: 0;
+}
+
+.position_corner {
+    height: 3rem;
+    width: 3rem;
+    background-color: blue;
+    position: absolute;
+}
+
+.position_top_left_corner {
+    bottom: 100%;
+    right: 100%;
+}
+
+.position_top_right_corner {
+    left: 100%;
+    bottom: 100%;
+}
+
+.position_bottom_left_corner {
+    top: 100%;
+    right: 100%;
+}
+
+.position_bottom_right_corner {
+    top: 100%;
+    left: 100%;
+}
+
+.position_center {
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* Position Flag. */
+#position_flag {
+}
+
+.position_flag_green {
+    margin: 100px auto;
+    height: 300px;
+    width: 450px;
+    background-color: rgb(7, 162, 17);
+    position: relative;
+}
+
+.position_flag_red {
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+
+
+
+/* Text and box shadow. */
+#text_and_box_shadow {
+    padding: 2rem 0;
+    background-color: antiquewhite;
+}
+
+.text_shadow h2 {
+    text-align: center;
+    text-shadow: 10px 10px 2px rgb(123, 111, 111);
+}
+
+.box_shadow {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(50, 205, 53);
+    margin: 50px auto;
+    box-shadow: -10px -10px 10px rgb(126, 116, 116);
+}
+
+
+/* Gradient */
+/* Radial gradient. */
+#gradient {
+    background-color: aquamarine;
+    padding: 30px 0;
+}
+
+.Radial_gradient {
+    height: 80px;
+    width: 80px;
+    margin: auto;
+    background: radial-gradient(red, green, blue);
+}
+
+.linear_gradient {
+    margin: 50px auto;
+    height: 100px;
+    width: 100px;
+    /* background: linear-gradient(45deg, red 50%, green 50%); */
+    /* background: linear-gradient(to left, red, green); */
+    background: linear-gradient(45deg, red, green);
+}
+
+
+/* Transform. */
+.transform_box {
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    margin: 100px auto;
+}
+
+.transform_scale {
+    transition: .5s;
+}
+
+/* 0 to 1 to greater than 1 */
+.transform_scale:hover {
+    transform: scale(2);
+}
+
+
+
+.transform_skew {
+    transition: .5s;
+}
+
+/* skew X(20deg)/(-20deg) */
+/* skew Y(20deg)/(-20deg) */
+.transform_skew:hover {
+    transform: skew(-45deg);
+}
+
+
+
+.transform_rotate {
+    transition: .5s;
+}
+
+/* rotate(-45deg) */
+/* rotate(90deg) */
+.transform_rotate:hover {
+    transform: rotate(-45deg);
+}
+
+
+
+
+.transform_translate {
+    transition: .5s;
+}
+
+/* translate X(25px) */
+/* translate Y(-20px) */
+/* translate (-20px, 50px) */
+.transform_translate:hover {
+    transform: translate(25px, 20px);
+}
